@@ -1,0 +1,272 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 160px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 2px solid #000;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar__logo img {
+    width: 100px;
+    height: auto;
+}
+
+.navbar__link {
+    font-size: 1.5em;
+    color: #000;
+    display: block;
+    padding: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+    color: #666;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 160px 0px 0px 160px;
+    background-color: #f0f0f0;
+    height: 370px;
+}
+
+.intro__title {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.intro__subtitle {
+    font-size: 1.5em;
+    color: #666;
+}
+
+/* Linux Section */
+.linux {
+    padding: 160px 20px 10px 20px;
+}
+
+.linux__content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.linux__image {
+    margin-left: 75px;
+}
+
+.linux__img {
+    max-width: 860px;
+    height: auto;
+}
+
+.linux__text {
+    padding-left: 20px;
+}
+
+.linux__heading {
+    font-size: 2em;
+}
+
+.linux__paragraph {
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Projects Section */
+.projects {
+    padding: 160px 20px 160px 160px;
+    background-color: #f9f9f9;
+    margin-top: 160px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.projects__title {
+    font-size: 3em;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.projects__list {
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.projects__item {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.projects__item strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    color: #000;
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact__title {
+    font-size: 3em;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contact__info {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.contact__email {
+    color: #000;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .navbar {
+        width: 180px;
+    }
+
+    .intro {
+        padding: 100px 20px 20px 180px;
+    }
+
+    .linux {
+        padding: 100px 20px 20px 180px;
+    }
+
+    .linux__img {
+        width: calc(100% - 40px);
+        margin-left: 0;
+    }
+
+    .projects__list {
+        flex-direction: column;
+    }
+
+    .projects__item {
+        max-width: 100%;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-bottom: 2px solid #000;
+        border-right: none;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .intro {
+        padding: 100px 20px;
+    }
+
+    .linux {
+        padding: 100px 20px;
+        margin-bottom: 100px;
+    }
+
+    .linux__content {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .linux__image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .linux__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .linux__text {
+        padding-left: 0;
+    }
+
+    .projects__list {
+        flex-direction: column;
+    }
+
+    .projects__item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
