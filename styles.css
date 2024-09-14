@@ -163,7 +163,7 @@ a:hover {
 
 /* Contact Section */
 .contact {
-    padding: 100px 20px;
+    padding: 160px 20px 20px 160px;
     background-color: #fff;
     text-align: center;
 }
@@ -177,6 +177,7 @@ a:hover {
 .contact__info {
     font-size: 1.2em;
     color: #666;
+    padding-bottom: 20px;
 }
 
 .contact__email {
@@ -269,4 +270,18 @@ a:hover {
     .container {
         width: 100%;
     }
+}
+#nav-container {
+    display: relative;
+
+    align-items: center; /* Allinea al centro verticalmente */
+    padding-bottom: 80px;
+
+}
+
+#svg-nav a img {
+    width: 40px; /* Imposta la larghezza delle icone */
+    height: 40px; /* Imposta l'altezza delle icone */
+    object-fit: contain; /* Mantiene il contenuto delle icone proporzionato */
+    margin-right: 20px ;
 }
