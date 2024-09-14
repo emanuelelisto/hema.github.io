@@ -100,7 +100,10 @@ a:hover {
 }
 
 .linux__image {
-    margin-left: 75px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: -220px; /* Space between the image and the line */
+
 }
 
 .linux__img {
@@ -109,7 +112,9 @@ a:hover {
 }
 
 .linux__text {
-    padding-left: 20px;
+    padding-left: 60px;
+    padding-right: 30px;
+
     padding-bottom: px;
     padding-top: 280px;
     top: 100px;
@@ -120,12 +125,15 @@ a:hover {
 
 .linux__heading {
     font-size: 2em;
+    text-align: right;
+
 }
 
 .linux__paragraph {
     margin-bottom: 20px;
     line-height: 1.4;
     font-size: 1.1em;
+    text-align: right;
 
 }
 
@@ -139,7 +147,7 @@ a:hover {
     margin-bottom: 20px;
     margin-left: -20%; /* Questa è la novità! */
     margin-top: 250px; /* Posiziona la linea sopra la scritta */
-    margin-right: -400px;
+    margin-right: -610px;
 }
 
 
