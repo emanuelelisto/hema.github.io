@@ -8,7 +8,9 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #333;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: #f0f0f0;
+
     overflow-x: hidden;
 }
 
@@ -92,6 +94,7 @@ a:hover {
 /* Linux Section */
 .linux {
     padding: 160px 20px 10px 20px;
+    background-color: #f0f0f0;
 }
 
 .linux__content {
@@ -153,71 +156,53 @@ a:hover {
 
 /* Projects Section */
 .projects {
-    padding: 160px 20px 160px 160px;
-    background-color: #f9f9f9;
+    padding: 160px 20px;
+    margin-left: 120px;
+    background-color: #f0f0f0;
+    margin-bottom: 80px;
     margin-top: 160px;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center; /* Centra il contenuto della sezione */
 }
 
+/* Lista dei progetti */
+.projects__list {
+    display: flex;
+    justify-content: space-between; /* Spazia i progetti a sinistra e a destra */
+    gap: 80px; /* Spazio tra i riquadri */
+    width: 100%;
+    max-width: 1200px; /* Limita la larghezza massima */
+    margin-top: 80px;
+}
+
+/* Singolo progetto */
+.projects__item {
+    width: calc(50% - 10px); /* Larghezza del 50% meno metà del gap */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #000;
+    font-size: 1.2em;
+
+    text-align: center; /* Centra il contenuto del progetto */
+}
+
+/* Titolo della sezione */
 .projects__title {
     font-size: 3em;
     color: #000;
     margin-bottom: 40px;
-}
-
-.projects__list, .projects__list_R {
-    width: 300px;   /* Stessa larghezza per entrambi */
-    height: 200px;  /* Stessa altezza per entrambi */
-    display: inline-block;
-    margin: 0;
-    position: relative;
-    
-}
-
-.projects__list {
-    text-align: left;
-    left: 790px;   /* Sposta l'elemento a destra */
-}
-
-.projects__list_R {
-    text-align: right;
-    top: 100px;    /* Sposta l'elemento in basso */
-    left: -100px;  /* Sposta l'elemento a sinistra */
+    text-align: center;
+    width: 100%;
 }
 
 
-.projects__item {
-    max-width: 800px;
-    margin: 0 auto 20px;
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1.2em;
-}
-
-.projects__list, .projects__list_R {
-    width: 600px;   /* Stessa larghezza per entrambi */
-    height: 200px;  /* Stessa altezza per entrambi */
-
-}
-
-
-
-
-
-.projects__item strong {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 1.5em;
-    color: #000;
-}
 
 /* Contact Section */
 .contact {
-    padding: 160px 20px 20px 160px;
-    background-color: #fff;
+    padding: 80px 20px 20px 160px;
+    background-color: #f0f0f0;
+
     text-align: center;
 }
 
