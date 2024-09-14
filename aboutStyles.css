@@ -94,6 +94,11 @@ a:hover {
     height: 2px;
     background-color: #000;
     margin-top: 20px; /* Space between the line and the text */
+    display: block;
+    width: 100%;
+    
+
+
 }
 
 .bio_text {
