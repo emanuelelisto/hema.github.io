@@ -104,7 +104,7 @@ a:hover {
 .grid__container {
     padding: 160px 20px 80px 160px;
     width: 100vw;
-    margin-top: 160px;
+    margin-top: 20px;
     margin-left: -90px;
     display: flex;
     align-items: flex-start;
