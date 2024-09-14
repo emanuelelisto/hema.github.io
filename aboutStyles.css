@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 160px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 2px solid #000;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar__logo img {
+    width: 100px;
+    height: auto;
+}
+
+.navbar__link {
+    font-size: 1.5em;
+    color: #000;
+    display: block;
+    padding: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+    color: #666;
+}
+
+
+.bio {
+    padding: 80px 20px 10px 380px;
+    
+}
+.bio_line {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background-color: #000; /* Puoi cambiare il colore qui */
+    margin-bottom: 20px;
+    margin-left: 50%; /* Questa è la novità! */
+    margin-top: 250px; /* Posiziona la linea sopra la scritta */
+    margin-right: -400px;
+
+}
+
+.bio_text {
+    padding-left: 760px;
+    padding-bottom: px;
+    padding-top: 10px;
+    top: 100px;
+    width: 80%;
+    position: flex;
+
+}
+
+.bio_pic {
+    height: auto;
+    margin-top: -300px;
+ 
+}
+
+/* Grid Container */
+.grid__container {
+    padding: 160px 20px 80px 160px;
+    width: 100vw;
+    margin-top: 160px;
+    margin-left: -90px;
+    display: flex;
+    align-items: flex-start;
+}
+.grid {
+    max-width: 1200px; /* Ensure grid does not exceed maximum width */
+    width: 100%; /* Ensure the grid takes full width available */
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+    gap: 60px; /* Adjust the gap between items as needed */
+}
+
+/* Grid Item */
+.grid__item {
+    flex: 1 1 calc(25% - 50px); /* 4 items per row with gap adjustment */
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    margin-bottom: 20px; /* Spacing at the bottom */
+}
+
+.grid__heading {
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.grid__list {
+    list-style-type: none; /* Remove default list bullets */
+    padding-left: 0; /* Remove default padding */
+    margin: 0;
+    
+}
+
+.grid__list-item {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
