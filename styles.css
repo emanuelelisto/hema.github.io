@@ -166,13 +166,54 @@ a:hover {
     margin-bottom: 40px;
 }
 
-.projects__list {
-    list-style-type: disc;
-    padding: 0;
-    margin: 0;
+.projects__list, .projects__list_R {
+    width: 300px;   /* Stessa larghezza per entrambi */
+    height: 200px;  /* Stessa altezza per entrambi */
     display: inline-block;
-    text-align: left;
+    margin: 0;
+    position: relative;
+    
 }
+
+.lineR {
+    position: absolute; /* Position the line absolutely relative to the .bio container */
+    left: calc(7% + 40%); /* Start the line from the left */
+    right: 0%; /* End the line halfway across the container */
+    top: 158%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 20px; /* Space between the line and the text */
+    display: block;
+    width: 100%;
+    
+/*prova*/
+
+}
+
+.lineL {
+    position: absolute; /* Position the line absolutely relative to the .bio container */
+    left: calc(25% - 40%); /* Start the line from the left */
+    right: 0%; /* End the line halfway across the container */
+    top: 80%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 20px; /* Space between the line and the text */
+    display: block;
+    width: 172%;
+}
+
+
+.projects__list {
+    text-align: left;
+    left: 990px;   /* Sposta l'elemento a destra */
+}
+
+.projects__list_R {
+    text-align: right;
+    top: 100px;    /* Sposta l'elemento in basso */
+    left: -180px;  /* Sposta l'elemento a sinistra */
+}
+
 
 .projects__item {
     max-width: 800px;
@@ -183,6 +224,15 @@ a:hover {
     border-radius: 5px;
     font-size: 1.2em;
 }
+
+.projects__list, .projects__list_R {
+    width: 600px;   /* Stessa larghezza per entrambi */
+    height: 200px;  /* Stessa altezza per entrambi */
+
+}
+
+
+
 
 .projects__item strong {
     display: block;
