@@ -43,6 +43,8 @@ a:hover {
     border-right: 2px solid #000;
     padding-top: 20px;
     box-sizing: border-box;
+    z-index: 10; /* Assicurarsi che sia sopra il contenuto della pagina */
+
 }
 
 .navbar ul {
@@ -110,7 +112,7 @@ a:hover {
 }
 
 .linux__img {
-    max-width: 860px;
+    max-width: 80%;
     height: auto;
 }
 
@@ -148,7 +150,7 @@ a:hover {
 
     background-color: #000; /* Puoi cambiare il colore qui */
     margin-bottom: 20px;
-    margin-left: -20%; /* Questa è la novità! */
+    margin-left: -40%; /* Questa è la novità! */
     margin-top: 250px; /* Posiziona la linea sopra la scritta */
     margin-right: -610px;
 }
@@ -222,93 +224,7 @@ a:hover {
     color: #000;
 }
 
-/* Media Queries for Responsiveness */
 
-/* Tablet */
-@media (max-width: 1024px) {
-    .navbar {
-        width: 180px;
-    }
-
-    .intro {
-        padding: 100px 20px 20px 180px;
-    }
-
-    .linux {
-        padding: 100px 20px 20px 180px;
-    }
-
-    .linux__img {
-        width: calc(100% - 40px);
-        margin-left: 0;
-    }
-
-    .projects__list {
-        flex-direction: column;
-    }
-
-    .projects__item {
-        max-width: 100%;
-    }
-}
-
-/* Smartphone */
-@media (max-width: 768px) {
-    .navbar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        border-bottom: 2px solid #000;
-        border-right: none;
-    }
-
-    .navbar ul {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .intro {
-        padding: 100px 20px;
-    }
-
-    .linux {
-        padding: 100px 20px;
-        margin-bottom: 100px;
-    }
-
-    .linux__content {
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
-
-    .linux__image {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .linux__img {
-        width: 100%;
-        height: auto;
-    }
-
-    .linux__text {
-        padding-left: 0;
-    }
-
-    .projects__list {
-        flex-direction: column;
-    }
-
-    .projects__item {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .container {
-        width: 100%;
-    }
-}
 #nav-container {
     display: relative;
 
@@ -322,4 +238,145 @@ a:hover {
     height: 40px; /* Imposta l'altezza delle icone */
     object-fit: contain; /* Mantiene il contenuto delle icone proporzionato */
     margin-right: 20px ;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Togliere le linee e adattare per mobile */
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+
+    .navbar__link {
+        font-size: 1em;
+        padding: 10px;
+        padding-left: 28px;
+    }
+
+    .intro__title {
+        font-size: 2em;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        margin-bottom: 10px;
+        margin-top: -60px;
+        color: #000;
+        margin-left: -150px; /* Sposta il titolo verso sinistra */
+
+
+    }
+    
+    .intro__subtitle {
+        font-size: 1.5em;
+        color: #666;
+        max-width: 150%; /* Aumenta la larghezza massima del sottotitolo */
+        margin-left: -150px; /* Sposta il sottotitolo leggermente verso sinistra */
+        line-height: 1.5; /* Migliora la leggibilità aumentando l'interlinea */
+        margin-bottom: 10px;
+    }
+    
+    
+    
+
+    /* Immagine sopra il testo e centrata per la sezione Linux */
+    .linux__content {
+        display: flex;
+        flex-direction: column; /* Cambia l'ordine: immagine sopra il testo */
+        align-items: center;
+        text-align: center;
+    }
+
+    .linux__image {
+        width: 120%;  /* Riduci la larghezza dell'immagine al 80% */
+        margin: 10px ; /* Margine superiore e inferiore per centratura */
+        padding-top: -300px;
+    }
+
+    .linux__img {
+        max-width: 100%; /* Immagine responsiva */
+        height: auto;
+    }
+
+    /* Testo sotto l'immagine, centrato */
+    .linux__text {
+        padding: 1px;
+        text-align: right; /* Centra il testo */
+        order: 1; /* Assicura che il testo sia sotto l'immagine */
+        padding-bottom: 10px;
+        max-width: 100%;
+        padding-right: -60px;
+        padding-left: -90px;
+    }
+
+
+    .linux__line {
+        display: none; /* Rimuove le linee */
+    }
+
+    .projects {
+        padding: 10px 20px;
+        margin-left: 120px;
+        background-color: #f0f0f0;
+        margin-bottom: 10px;
+        margin-top: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra il contenuto della sezione */
+        margin-left: 10px;
+    }
+
+    .projects__list {
+        flex-direction: column;
+    }
+
+    .projects__item {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+
+    }
+
+    .contact {
+        padding: 80px 20px 20px 160px;
+        background-color: #f0f0f0;
+    
+        text-align: center;
+        margin-left: -140px;
+        
+    }
+}
+
+
+@media (max-width: 480px) {
+    /* Adattamenti per smartphone */
+    .intro__title {
+        font-size: 1.5em;
+    }
+
+    .intro__subtitle {
+        font-size: 1.2em;
+    }
+
+    .linux__heading {
+        font-size: 1.5em;
+    }
+
+    .linux__paragraph {
+        font-size: 1em;
+    }
+
+    .projects__title {
+        font-size: 2em;
+    }
+
+    .contact__title {
+        font-size: 2em;
+    }
+
+    .contact__info {
+        font-size: 1em;
+    }
 }

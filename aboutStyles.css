@@ -225,7 +225,7 @@ a:hover {
         border-bottom: 2px solid #000;
     }
     .navbar__link {
-        font-size: 1.5em;
+        font-size: 2.5em;
         padding: 10px;
         padding-left: 28px;
     }
@@ -268,6 +268,10 @@ a:hover {
         max-width: 600px; /* Maximum width for the text */
         text-align: center;
 
+    }
+
+        .container {
+        width: 100%;
     }
 }
 
