@@ -199,3 +199,86 @@ a:hover {
 }
 
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .navbar {
+        width: 120px;
+    }
+    .bio_pic, .present_pic {
+        margin-left: 20px;
+    }
+    .bio_line, .present_line {
+        left: 10%;
+    }
+    .grid__container {
+        padding: 80px 20px 40px 20px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+    .navbar__link {
+        font-size: 1.5em;
+        padding: 10px;
+        padding-left: 28px;
+    }
+    .bio, .present {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+        padding-top: -810px;
+    }
+    .bio_text {
+        margin-left: 10px; /* No margin-left needed since the line will handle spacing */
+        padding-top: 40px;
+        padding-right: 10px;
+        width: 100%; /* Text container takes full width of the container */
+        max-width: 600px; /* Maximum width for the text */
+        text-align: center;
+    }
+    .bio_pic {
+        top: 20px;
+    }
+    .bio_pic, .present_pic {
+        margin: 0;
+    }
+    .bio_line, .present_line {
+        display: none; /* Hide lines on tablets and smaller devices */
+    }
+    .grid__container {
+        padding: 80px 20px 40px 20px;
+        margin-left: 0;
+    }
+    .grid__item {
+        flex: 1 1 100%; /* Full width for mobile */
+    }
+
+    .present_text {
+        margin-left: 10px; /* No margin-left needed since the line will handle spacing */
+        padding-top: 10px;
+        padding-right: 10px;
+        width: 100%; /* Text container takes full width of the container */
+        max-width: 600px; /* Maximum width for the text */
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar__link {
+        font-size: 1em;
+    }
+    .grid__heading {
+        font-size: 1.2em;
+    }
+    .grid__list-item {
+        font-size: 0.9em;
+    }
+}
