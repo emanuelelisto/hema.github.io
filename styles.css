@@ -139,6 +139,7 @@ a:hover {
     line-height: 1.4;
     font-size: 1.1em;
     text-align: right;
+    margin-left: 100px;
 
 }
 
@@ -152,7 +153,7 @@ a:hover {
     margin-bottom: 20px;
     margin-left: -40%; /* Questa è la novità! */
     margin-top: 250px; /* Posiziona la linea sopra la scritta */
-    margin-right: -610px;
+    margin-right: -634px;
 }
 
 
@@ -317,10 +318,12 @@ a:hover {
     }
 
     .linux__paragraph {
-        margin-bottom: 20px;
+        margin-bottom: -100px;
         line-height: 1.4;
-        font-size: 1.1em;
+        font-size: 1.4em;
         text-align: center;
+        margin-left: -60px;
+        width: 150%;
     
     }
 

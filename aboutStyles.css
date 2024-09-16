@@ -88,7 +88,7 @@ a:hover {
 
 .bio_line {
     position: absolute; /* Position the line absolutely relative to the .bio container */
-    left: calc(17% + 40%); /* Start the line from the left */
+    left: calc(10% + 40%); /* Start the line from the left */
     right: 0%; /* End the line halfway across the container */
     top: 50%;
     height: 2px;
@@ -103,7 +103,7 @@ a:hover {
 
 .bio_text {
     margin-left: 20px; /* No margin-left needed since the line will handle spacing */
-    padding-top: 270px;
+    padding-top: 400px;
     width: 100%; /* Text container takes full width of the container */
     max-width: 600px; /* Maximum width for the text */
 }
@@ -192,10 +192,29 @@ a:hover {
 }
 
 .present_text {
-    margin-left: 130px; /* No margin-left needed since the line will handle spacing */
-    padding-top: 120px;
+    margin-left: 100px; /* No margin-left needed since the line will handle spacing */
+    padding-top: 150px;
     width: 100%; /* Text container takes full width of the container */
-    max-width: 600px; /* Maximum width for the text */
+    max-width: 400px; /* Maximum width for the text */
+    
+}
+
+.present_par {
+    margin-bottom: 20px;
+    margin-left: -95px;
+    width: 200%;
+}
+
+.present_heading {
+    margin-left: -100px;
+    margin-bottom: 20px;
+    margin-left: -95px;
+    padding-top: 10px;
+
+
+
+
+
 }
 
 
