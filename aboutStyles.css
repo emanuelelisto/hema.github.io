@@ -209,7 +209,7 @@ a:hover {
     margin-left: -100px;
     margin-bottom: 20px;
     margin-left: -95px;
-    padding-top: 10px;
+    padding-top: 20px;
 
 
 
@@ -279,13 +279,29 @@ a:hover {
         flex: 1 1 100%; /* Full width for mobile */
     }
 
+    .present_heading {
+        margin-left: -50px;
+        margin-bottom: 20px;
+        margin-left: -90px;
+        padding-top: 20px;
+        text-align: center;
+        width: 200%;
+
+    
+    
+    
+    
+    
+    }
+
     .present_text {
-        margin-left: 10px; /* No margin-left needed since the line will handle spacing */
+        margin-left: 15px; /* No margin-left needed since the line will handle spacing */
         padding-top: 10px;
         padding-right: 10px;
-        width: 100%; /* Text container takes full width of the container */
+        width: 50%; /* Text container takes full width of the container */
         max-width: 600px; /* Maximum width for the text */
         text-align: center;
+        font-size: 1.2em;
 
     }
 
