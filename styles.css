@@ -240,7 +240,8 @@ a:hover {
     width: 40px; /* Imposta la larghezza delle icone */
     height: 40px; /* Imposta l'altezza delle icone */
     object-fit: contain; /* Mantiene il contenuto delle icone proporzionato */
-    margin-right: 20px ;
+    margin-right: 20px; 
+    margin-bottom: -20px;
 }
 
 
@@ -365,13 +366,15 @@ a:hover {
     }
 
     .contact {
-        padding: 80px 20px 20px 160px;
+        padding: 80px 10px 80px 140px;
         background-color:  #fff;
     
         text-align: center;
         margin-left: -140px;
         
     }
+
+
 }
 
 
