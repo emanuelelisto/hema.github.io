@@ -134,6 +134,7 @@ a:hover {
     display: flex;
     flex-direction: column; /* Align children vertically */
     margin-bottom: 20px; /* Spacing at the bottom */
+
 }
 
 .grid__heading {
@@ -153,6 +154,7 @@ a:hover {
     font-size: 1em;
     color: #666;
     margin-bottom: 10px;
+    margin-left: 1px;
 }
 
 /* Bio Section */
@@ -293,6 +295,9 @@ a:hover {
     
     
     
+    }
+    .present_pic{
+        width: 60%;
     }
 
     .present_text {
