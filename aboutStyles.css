@@ -101,6 +101,12 @@ a:hover {
 
 }
 
+.bio_par{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
 .bio_text {
     margin-left: 20px; /* No margin-left needed since the line will handle spacing */
     padding-top: 400px;
