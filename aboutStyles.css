@@ -112,6 +112,7 @@ a:hover {
     padding-top: 400px;
     width: 100%; /* Text container takes full width of the container */
     max-width: 600px; /* Maximum width for the text */
+    font-size: 1.2em;
 }
 /* Grid Container */
 .grid__container {
