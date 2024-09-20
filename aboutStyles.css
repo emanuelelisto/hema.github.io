@@ -308,7 +308,7 @@ a:hover {
     }
 
     .present_text {
-        margin-left: 15px; /* No margin-left needed since the line will handle spacing */
+        margin-left: 50px; /* No margin-left needed since the line will handle spacing */
         padding-top: 10px;
         padding-right: 10px;
         width: 50%; /* Text container takes full width of the container */
