@@ -237,9 +237,9 @@ a:hover {
         border-bottom: 2px solid #000;
     }
     .navbar__link {
-        font-size: 1.4em;
+        font-size: 2.5em;
         padding: 10px;
-        padding-left: 20px;
+        padding-left: 28px;
     }
     .bio, .present {
         flex-direction: column;
@@ -274,7 +274,7 @@ a:hover {
     }
 
     .present_heading {
-        margin-left: -30px;
+        margin-left: -50px;
         margin-bottom: 20px;
         margin-left: -90px;
         padding-top: 20px;
@@ -292,7 +292,7 @@ a:hover {
     }
 
     .present_text {
-        margin-left: 50px; /* No margin-left needed since the line will handle spacing */
+        margin-left: 15px; /* No margin-left needed since the line will handle spacing */
         padding-top: 10px;
         padding-right: 10px;
         width: 50%; /* Text container takes full width of the container */
@@ -324,3 +324,90 @@ a:hover {
         opacity: 1;
     }
 }
+
+
+@media (max-width: 1180px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+    .navbar__link {
+        font-size: 1.4em;
+        padding: 10px;
+        padding-left: 20px;
+    }
+    .bio, .present {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+        padding-top: -810px;
+    }
+    .bio_text {
+        margin-left: 10px; /* No margin-left needed since the line will handle spacing */
+        padding-top: 40px;
+        padding-right: 10px;
+        width: 100%; /* Text container takes full width of the container */
+        max-width: 600px; /* Maximum width for the text */
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .bio_pic {
+        top: 20px;
+    }
+    .bio_pic, .present_pic {
+        margin: 0;
+    }
+    .bio_line, .present_line {
+        display: none; /* Hide lines on tablets and smaller devices */
+    }
+    .grid__container {
+        padding: 80px 20px 40px 20px;
+        margin-left: 0;
+    }
+    .grid__item {
+        flex: 1 1 100%; /* Full width for mobile */
+        font-size: 1.2em;
+    }
+
+    .present_heading {
+        margin-left: -50px;
+        margin-bottom: 20px;
+        margin-left: -90px;
+        padding-top: 20px;
+        text-align: center;
+        width: 200%;
+    
+    }
+
+    .present {
+        display: flex;
+      
+        padding: 80px 20px 10px 20px; /* Adjust padding as needed */
+        position: relative; /* Allow absolute positioning for the line */
+        padding-bottom: 160px;
+    }
+
+    .present_pic{
+        width: 45%;
+        padding-left: -10px;
+    }
+
+    .present_text {
+        margin-left: 20px; /* No margin-left needed since the line will handle spacing */
+        padding-top: 10px;
+        padding-right: 10px;
+        width: 40%; /* Text container takes full width of the container */
+        max-width: 600px; /* Maximum width for the text */
+        text-align: center;
+        font-size: 1.5em;
+
+    }
+
+        .container {
+        width: 100%;
+    }
+}
+
