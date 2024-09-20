@@ -246,7 +246,7 @@ a:hover {
 
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     /* Togliere le linee e adattare per mobile */
     .navbar {
         width: 100%;
