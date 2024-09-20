@@ -226,6 +226,100 @@ a:hover {
 
 }
 
+@media (max-width: 1900px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+    .navbar__link {
+        font-size: 1.4em;
+        padding: 10px;
+        padding-left: 20px;
+    }
+    .bio, .present {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+        padding-top: -810px;
+    }
+    .bio_text {
+        margin-left: 10px; /* No margin-left needed since the line will handle spacing */
+        padding-top: 40px;
+        padding-right: 10px;
+        width: 100%; /* Text container takes full width of the container */
+        max-width: 600px; /* Maximum width for the text */
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .bio_pic {
+        top: 20px;
+    }
+    .bio_pic, .present_pic {
+        margin: 0;
+    }
+    .bio_line, .present_line {
+        display: none; /* Hide lines on tablets and smaller devices */
+    }
+    .grid__container {
+        padding: 80px 20px 40px 20px;
+        margin-left: 0;
+    }
+    .grid__item {
+        flex: 1 1 100%; /* Full width for mobile */
+        font-size: 1.2em;
+    }
+
+    .present_heading {
+        margin-bottom: 20px;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%;             /* Fai in modo che prenda il 100% della larghezza del container */
+        font-size: 2em;  
+        /* Aumenta o diminuisci la dimensione del testo a seconda delle tue esigenze */
+    }
+    
+
+    
+    .present_pic {
+        width: 45%;                  /* Immagine larga il 45% del container */
+        max-width: 100%;             /* Evita che l'immagine superi la larghezza del container */
+        margin-right: 5px;          /* Aggiungi uno spazio tra immagine e testo */
+    }
+    
+    .present_text {
+        text-align: center;        /* Centra il testo */
+        max-width: 90%;            /* Mantieni la larghezza massima del testo */
+        padding-left: 190px;             /* Uniforma il padding per bilanciare il testo */
+        margin: 0 auto;            /* Aggiungi il margine automatico per centrare */
+        font-size: 1.4em;          /* Dimensione del testo */
+    }
+    
+
+    .present_par {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        text-align: center;          /* Centra il testo */
+        width: 100%;                 /* Fai in modo che il paragrafo prenda il 100% del container */
+    }
+    
+
+        .container {
+            display: flex;               /* Attiva Flexbox */
+    justify-content: center;     /* Centra gli elementi orizzontalmente */
+    align-items: center;         /* Centra gli elementi verticalmente */
+    flex-direction: column;      /* Gli elementi saranno disposti in colonna */
+    min-height: 100vh;           /* Assicura che il contenitore prenda l'altezza completa della finestra */
+    width: 100vw;                /* Assicura che il contenitore prenda la larghezza completa della finestra */
+
+    box-sizing: border-box; 
+    }
+}
+
+
+
 @media (max-width: 1180px) {
     .navbar {
         width: 100%;
