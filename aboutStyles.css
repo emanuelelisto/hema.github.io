@@ -227,22 +227,7 @@ a:hover {
 }
 
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    .navbar {
-        width: 120px;
-    }
-    .bio_pic, .present_pic {
-        margin-left: 20px;
-    }
-    .bio_line, .present_line {
-        left: 10%;
-    }
-    .grid__container {
-        padding: 80px 20px 40px 20px;
-        margin-left: 0;
-    }
-}
+
 
 @media (max-width: 768px) {
     .navbar {
