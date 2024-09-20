@@ -229,7 +229,7 @@ a:hover {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
     .navbar {
         width: 100%;
         height: auto;
@@ -238,9 +238,9 @@ a:hover {
         border-bottom: 2px solid #000;
     }
     .navbar__link {
-        font-size: 1.8em;
+        font-size: 1.2em;
         padding: 10px;
-        padding-left: 28px;
+        padding-left: 25px;
     }
     .bio, .present {
         flex-direction: column;
@@ -308,17 +308,7 @@ a:hover {
     }
 }
 
-@media (max-width: 480px) {
-    .navbar__link {
-        font-size: 1em;
-    }
-    .grid__heading {
-        font-size: 1.2em;
-    }
-    .grid__list-item {
-        font-size: 0.9em;
-    }
-}
+
 
 /* Aggiungi una classe per l'effetto di fade-in */
 .fade-in {
@@ -335,3 +325,5 @@ a:hover {
         opacity: 1;
     }
 }
+
+
