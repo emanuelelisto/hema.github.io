@@ -395,3 +395,136 @@ a:hover {
         opacity: 1;
     }
 }
+
+/* Media Queries */
+@media (max-width: 1180px) {
+    /* Togliere le linee e adattare per mobile */
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+
+    .navbar__link {
+        font-size: 1em;
+        padding: 10px;
+        padding-left: 28px;
+    }
+
+    .intro__title {
+        font-size: 2em;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        margin-bottom: 10px;
+        margin-top: -60px;
+        color: #000;
+        margin-left: -150px; /* Sposta il titolo verso sinistra */
+
+
+    }
+    
+    .intro__subtitle {
+        font-size: 1.5em;
+        color: #666;
+        max-width: 150%; /* Aumenta la larghezza massima del sottotitolo */
+        margin-left: -150px; /* Sposta il sottotitolo leggermente verso sinistra */
+        line-height: 1.5; /* Migliora la leggibilità aumentando l'interlinea */
+        margin-bottom: 10px;
+    }
+    
+    
+    
+
+    /* Immagine sopra il testo e centrata per la sezione Linux */
+    .linux__content {
+        display: flex;
+        flex-direction: column; /* Cambia l'ordine: immagine sopra il testo */
+        align-items: center;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -200px;
+    }
+
+    .linux__image {
+        width: 120%;  /* Riduci la larghezza dell'immagine al 80% */
+        margin: 10px ; /* Margine superiore e inferiore per centratura */
+        padding-top: -300px;
+    }
+
+    .linux__img {
+        max-width: 100%; /* Immagine responsiva */
+        height: auto;
+    }
+
+    /* Testo sotto l'immagine, centrato */
+    .linux__text {
+        text-align: center; /* Centra il testo */
+        order: 1; /* Assicura che il testo sia sotto l'immagine */
+        padding-bottom: 10px;
+        max-width: 100%;
+    
+        padding-left: -180px;
+        padding-right: 100px;
+        padding-top: 10px;
+    }
+
+    .linux__paragraph {
+        margin-bottom: -100px;
+        line-height: 1.4;
+        font-size: 1.4em;
+        text-align: center;
+        margin-left: -115px;
+        width: 150%;
+    
+    }
+
+    .linux__heading {
+        font-size: 2em;
+        text-align: center;
+        padding-left: 10px;
+    
+    }
+
+
+    .linux__line {
+        display: none; /* Rimuove le linee */
+    }
+
+    .projects {
+        padding: 10px 20px;
+        margin-left: 120px;
+        background-color:  #fff;
+        margin-bottom: 10px;
+        margin-top: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra il contenuto della sezione */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .projects__list {
+        flex-direction: column;
+    }
+
+    .projects__item {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+
+    }
+
+    .contact {
+        padding: 80px 10px 20px 140px;
+        background-color:  #fff;
+    
+        text-align: center;
+        margin-left: -140px;
+        
+    }
+
+
+}
+
