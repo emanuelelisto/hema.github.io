@@ -164,6 +164,8 @@ a:hover {
 }
 
 
+
+
 /* Media Queries for Bio and Present sections */
 @media (max-width: 1180px) {
     .navbar {
@@ -205,6 +207,10 @@ a:hover {
     .grid__item {
         flex: 1 1 100%; /* Full width for mobile */
         font-size: 1.2em;
+    }
+
+    .present_pic {
+    max-width: 30%;
     }
 }
 
@@ -248,6 +254,9 @@ a:hover {
         flex: 1 1 100%; /* Full width for mobile */
         font-size: 1.2em;
     }
+    .present_pic {
+        max-width: 50%;
+        }
 }
 
 
