@@ -57,7 +57,7 @@ a:hover {
 }
 
 .navbar__link {
-    font-size: 1.2rem; /* Use relative units */
+    font-size: 1.2em; /* Use relative units */
     color: #000;
     display: block;
     padding: 22px;
