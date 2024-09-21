@@ -259,25 +259,29 @@ a:hover {
         padding-left: 25px;
     }
 
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Centra il contenuto */
+        padding: 100px 20px;
+        background-color: #fff;
+        height: auto;
+    }
+
     .intro__title {
-        font-size: 2em;
+        font-size: 1.8em;
         font-weight: 700;
         letter-spacing: 0.05em;
         margin-bottom: 10px;
-        margin-top: -60px;
         color: #000;
-        margin-left: -150px; /* Sposta il titolo verso sinistra */
-
-
+        text-align: center;
     }
-    
+
     .intro__subtitle {
-        font-size: 1.5em;
+        font-size: 1.2em;
         color: #666;
-        max-width: 150%; /* Aumenta la larghezza massima del sottotitolo */
-        margin-left: -150px; /* Sposta il sottotitolo leggermente verso sinistra */
-        line-height: 1.5; /* Migliora la leggibilità aumentando l'interlinea */
-        margin-bottom: 10px;
+        text-align: center;
     }
     
     
@@ -289,21 +293,16 @@ a:hover {
         flex-direction: column; /* Cambia l'ordine: immagine sopra il testo */
         align-items: center;
         text-align: center;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: -200px;
     }
 
     .linux__image {
-        width: 120%;  /* Riduci la larghezza dell'immagine al 80% */
-        margin: 10px ; /* Margine superiore e inferiore per centratura */
-        padding-top: -300px;
+        max-width: 170%;  /* Riduci la larghezza dell'immagine al 80% */
+        margin-right: 10px;
+        margin-left: 145px;
+
+
     }
 
-    .linux__img {
-        max-width: 100%; /* Immagine responsiva */
-        height: auto;
-    }
 
     /* Testo sotto l'immagine, centrato */
     .linux__text {
@@ -323,14 +322,14 @@ a:hover {
         font-size: 1.4em;
         text-align: center;
         margin-left: -60px;
-        width: 100%;
+        width: 150%;
     
     }
 
     .linux__heading {
         font-size: 2em;
         text-align: center;
-        width: 110%;
+        width: 180%;
  
 
     
