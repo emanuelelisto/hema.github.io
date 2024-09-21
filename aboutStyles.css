@@ -256,7 +256,7 @@ a:hover {
         padding: 20px 20px;
     }
     .bio_text, .present_text {
-        margin-left: 10px;
+        margin-left: 15px;
         padding-top: 40px;
         padding-right: 10px;
         width: 100%;
@@ -278,7 +278,8 @@ a:hover {
         font-size: 1.2em;
     }
     .present_pic {
-        max-width: 50%;
+        max-width: 60%;
+        margin-right: 15px;
         }
 }
 
