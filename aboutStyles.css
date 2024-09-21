@@ -10,14 +10,15 @@ body {
     color: #333;
     background-color: #fff;
     overflow-x: hidden;
+    font-size: 16px; /* Base font size */
 }
 
+/* Updated container class */
 .container {
-    width: 85%;
-    margin: 0 auto;
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* Add padding for spacing */
 }
-
 a {
     color: #000;
     text-decoration: none;
@@ -42,6 +43,7 @@ a:hover {
     padding-top: 20px;
     box-sizing: border-box;
     z-index: 10; /* Assicurarsi che sia sopra il contenuto della pagina */
+    
 }
 
 .navbar ul {
@@ -55,7 +57,7 @@ a:hover {
 }
 
 .navbar__link {
-    font-size: 1.5em;
+    font-size: 1.2rem; /* Use relative units */
     color: #000;
     display: block;
     padding: 15px;
@@ -67,27 +69,27 @@ a:hover {
 }
 
 /* Bio Section */
-.bio {
+/* Bio and Present Section - Unified Styles */
+.bio, .present {
     display: flex;
-  
     padding: 80px 20px 10px 20px; /* Adjust padding as needed */
     position: relative; /* Allow absolute positioning for the line */
 }
 
-.bio_pic {
+.bio_pic, .present_pic {
     position: relative; /* Make the image's position relative to the line */
     margin-right: 20px; /* Space between the image and the line */
     margin-left: 300px;
 }
 
-.bio_pic img {
+.bio_pic img, .present_pic img {
     display: block;
     max-width: 100%; /* Ensure the image scales correctly */
     height: auto; /* Maintain aspect ratio */
 }
 
-.bio_line {
-    position: absolute; /* Position the line absolutely relative to the .bio container */
+.bio_line, .present_line {
+    position: absolute; /* Position the line absolutely relative to the container */
     left: calc(10% + 40%); /* Start the line from the left */
     right: 0%; /* End the line halfway across the container */
     top: 50%;
@@ -96,24 +98,21 @@ a:hover {
     margin-top: 20px; /* Space between the line and the text */
     display: block;
     width: 100%;
-    
-/*prova*/
-
 }
 
-.bio_par{
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-}
-
-.bio_text {
+.bio_text, .present_text {
     margin-left: 20px; /* No margin-left needed since the line will handle spacing */
     padding-top: 400px;
     width: 100%; /* Text container takes full width of the container */
     max-width: 600px; /* Maximum width for the text */
     font-size: 1.2em;
 }
+
+.bio_par, .present_par {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* Grid Container */
 .grid__container {
     padding: 160px 20px 80px 160px;
@@ -164,168 +163,8 @@ a:hover {
     margin-left: 1px;
 }
 
-/* Bio Section */
-.present {
-    display: flex;
-  
-    padding: 80px 20px 10px 20px; /* Adjust padding as needed */
-    position: relative; /* Allow absolute positioning for the line */
-    padding-bottom: 160px;
-}
 
-.present_pic {
-    position: relative; /* Make the image's position relative to the line */
-    margin-right: 20px; /* Space between the image and the line */
-    margin-left: 300px;
-}
-
-.present_pic img {
-    display: block;
-    max-width: 100%; /* Ensure the image scales correctly */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.present_line {
-    position: absolute; /* Position the line absolutely relative to the .bio container */
-    left: calc(17% + 40%); /* Start the line from the left */
-    right: 0%; /* End the line halfway across the container */
-    top: 35%;
-    height: 2px;
-    background-color: #000;
-    margin-top: 20px; /* Space between the line and the text */
-    display: block;
-    width: 100%;
-    
-/*prova*/
-
-}
-
-.present_text {
-    margin-left: 100px; /* No margin-left needed since the line will handle spacing */
-    padding-top: 150px;
-    width: 100%; /* Text container takes full width of the container */
-    max-width: 400px; /* Maximum width for the text */
-    
-}
-
-.present_par {
-    margin-bottom: 20px;
-    margin-left: -95px;
-    width: 200%;
-}
-
-.present_heading {
-    margin-left: -100px;
-    margin-bottom: 20px;
-    margin-left: -95px;
-    padding-top: 20px;
-
-
-
-
-
-}
-
-
-
-@media (max-width: 768px) {
-    .navbar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        border-right: none;
-        border-bottom: 2px solid #000;
-    }
-    .navbar__link {
-        font-size: 2.5em;
-        padding: 10px;
-        padding-left: 28px;
-    }
-    .bio, .present {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 20px;
-        padding-top: -810px;
-    }
-    .bio_text {
-        margin-left: 10px; /* No margin-left needed since the line will handle spacing */
-        padding-top: 40px;
-        padding-right: 10px;
-        width: 100%; /* Text container takes full width of the container */
-        max-width: 600px; /* Maximum width for the text */
-        text-align: center;
-    }
-    .bio_pic {
-        top: 20px;
-    }
-    .bio_pic, .present_pic {
-        margin: 0;
-    }
-    .bio_line, .present_line {
-        display: none; /* Hide lines on tablets and smaller devices */
-    }
-    .grid__container {
-        padding: 80px 20px 40px 20px;
-        margin-left: 0;
-    }
-    .grid__item {
-        flex: 1 1 100%; /* Full width for mobile */
-        font-size: 1.2em;
-    }
-
-    .present_heading {
-        margin-left: -50px;
-        margin-bottom: 20px;
-        margin-left: -90px;
-        padding-top: 20px;
-        text-align: center;
-        width: 200%;
-
-    
-    
-    
-    
-    
-    }
-    .present_pic{
-        width: 60%;
-    }
-
-    .present_text {
-        margin-left: 15px; /* No margin-left needed since the line will handle spacing */
-        padding-top: 10px;
-        padding-right: 10px;
-        width: 50%; /* Text container takes full width of the container */
-        max-width: 600px; /* Maximum width for the text */
-        text-align: center;
-        font-size: 1.2em;
-
-    }
-
-        .container {
-        width: 100%;
-    }
-}
-
-
-
-/* Aggiungi una classe per l'effetto di fade-in */
-.fade-in {
-    opacity: 0; /* Comincia invisibile */
-    animation: fadeIn 1s ease-in-out forwards; /* 2 secondi di fade-in */
-}
-
-/* Definizione dell'animazione */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
+/* Media Queries for Bio and Present sections */
 @media (max-width: 1180px) {
     .navbar {
         width: 100%;
@@ -343,19 +182,15 @@ a:hover {
         flex-direction: column;
         align-items: center;
         padding: 20px 20px;
-        padding-top: -810px;
     }
-    .bio_text {
-        margin-left: 10px; /* No margin-left needed since the line will handle spacing */
+    .bio_text, .present_text {
+        margin-left: 10px;
         padding-top: 40px;
         padding-right: 10px;
-        width: 100%; /* Text container takes full width of the container */
-        max-width: 600px; /* Maximum width for the text */
+        width: 100%;
+        max-width: 600px;
         text-align: center;
         font-size: 1.4em;
-    }
-    .bio_pic {
-        top: 20px;
     }
     .bio_pic, .present_pic {
         margin: 0;
@@ -371,43 +206,70 @@ a:hover {
         flex: 1 1 100%; /* Full width for mobile */
         font-size: 1.2em;
     }
+}
 
-    .present_heading {
-        margin-left: -50px;
-        margin-bottom: 20px;
-        margin-left: -90px;
-        padding-top: 20px;
-        text-align: center;
-        width: 200%;
-    
-    }
-
-    .present {
-        display: flex;
-      
-        padding: 80px 20px 10px 20px; /* Adjust padding as needed */
-        position: relative; /* Allow absolute positioning for the line */
-        padding-bottom: 160px;
-    }
-
-    .present_pic{
-        width: 45%;
-        padding-left: -10px;
-    }
-
-    .present_text {
-        margin-left: 20px; /* No margin-left needed since the line will handle spacing */
-        padding-top: 10px;
-        padding-right: 10px;
-        width: 40%; /* Text container takes full width of the container */
-        max-width: 600px; /* Maximum width for the text */
-        text-align: center;
-        font-size: 1.5em;
-
-    }
-
-        .container {
+@media (max-width: 820px) {
+    .navbar {
         width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+    .navbar__link {
+        font-size: 2.5em;
+        padding: 10px;
+        padding-left: 28px;
+    }
+    .bio, .present {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+    }
+    .bio_text, .present_text {
+        margin-left: 10px;
+        padding-top: 40px;
+        padding-right: 10px;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
+    .bio_pic, .present_pic {
+        margin: 0;
+    }
+    .bio_line, .present_line {
+        display: none; /* Hide lines on smaller devices */
+    }
+    .grid__container {
+        padding: 80px 20px 40px 20px;
+        margin-left: 0;
+    }
+    .grid__item {
+        flex: 1 1 100%; /* Full width for mobile */
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+
+
+
+
+/* Aggiungi una classe per l'effetto di fade-in */
+.fade-in {
+    opacity: 0; /* Comincia invisibile */
+    animation: fadeIn 1s ease-in-out forwards; /* 2 secondi di fade-in */
+}
+
+/* Definizione dell'animazione */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
