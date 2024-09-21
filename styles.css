@@ -36,14 +36,14 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
+    position: fixed; /* Fissa la navbar in modo che rimanga visibile */
     top: 0;
     left: 0;
     border-right: 2px solid #000;
     padding-top: 20px;
     box-sizing: border-box;
     z-index: 10; /* Assicurarsi che sia sopra il contenuto della pagina */
-
+    
 }
 
 .navbar ul {
@@ -57,7 +57,7 @@ a:hover {
 }
 
 .navbar__link {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Use relative units */
     color: #000;
     display: block;
     padding: 22px;
@@ -68,13 +68,14 @@ a:hover {
     color: #666;
 }
 
+
 /* Intro Section */
 .intro {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 160px 200px 90px 160px;
+    padding: 140px 260px 40px 10px;
     background-color:  #fff;
     height: 370px;
 }
@@ -243,7 +244,7 @@ a:hover {
 
 
 /* Media Queries */
-@media (max-width: 820px) {
+@media (max-width: 820px)  {
     /* Togliere le linee e adattare per mobile */
     .navbar {
         width: 100%;
@@ -252,13 +253,11 @@ a:hover {
         border-right: none;
         border-bottom: 2px solid #000;
     }
-
     .navbar__link {
-        font-size: 1.2em;
+        font-size: 1.4em;
         padding: 10px;
-        padding-left: 25px;
+        padding-left: 20px;
     }
-
     .intro {
         display: flex;
         flex-direction: column;
