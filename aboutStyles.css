@@ -79,7 +79,7 @@ a:hover {
 .present_pic {
     position: relative; /* Make the image's position relative to the line */
     margin-right: 200px; /* Space between the image and the line */
-    margin-left: 140px;
+
     margin-top: 100px
 }
 
@@ -111,12 +111,11 @@ a:hover {
 
 .present_line {
     position: absolute; /* Position the line absolutely relative to the container */
-    left: calc(16.4% + 45%); /* Start the line from the left */
+    left: calc(9.6% + 45%); /* Start the line from the left */
     right: 0%; /* End the line halfway across the container */
-    top: 50%;
+   margin-top: 380px;
     height: 2px;
     background-color: #000;
-    margin-top: 20px; /* Space between the line and the text */
     display: block;
     width: 100%;
 }
@@ -191,7 +190,7 @@ a:hover {
 
 
 /* Media Queries for Bio and Present sections */
-@media (max-width: 1580px) {
+@media (max-width: 1380px) {
     .navbar {
         width: 100%;
         height: auto;
