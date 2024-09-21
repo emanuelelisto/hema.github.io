@@ -76,11 +76,20 @@ a:hover {
     position: relative; /* Allow absolute positioning for the line */
 }
 
-.bio_pic, .present_pic {
+.present_pic {
+    position: relative; /* Make the image's position relative to the line */
+    margin-right: 200px; /* Space between the image and the line */
+    margin-left: 140px;
+    margin-top: 100px
+}
+
+.bio_pic{
     position: relative; /* Make the image's position relative to the line */
     margin-right: 20px; /* Space between the image and the line */
-    margin-left: 300px;
+    margin-left: 200px;
 }
+
+
 
 .bio_pic img, .present_pic img {
     display: block;
@@ -88,9 +97,21 @@ a:hover {
     height: auto; /* Maintain aspect ratio */
 }
 
-.bio_line, .present_line {
+.bio_line {
     position: absolute; /* Position the line absolutely relative to the container */
-    left: calc(10% + 40%); /* Start the line from the left */
+    left: calc(-0.2% + 45%); /* Start the line from the left */
+    right: 0%; /* End the line halfway across the container */
+    top: 50%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 20px; /* Space between the line and the text */
+    display: block;
+    width: 100%;
+}
+
+.present_line {
+    position: absolute; /* Position the line absolutely relative to the container */
+    left: calc(16.4% + 45%); /* Start the line from the left */
     right: 0%; /* End the line halfway across the container */
     top: 50%;
     height: 2px;
@@ -163,11 +184,14 @@ a:hover {
     margin-left: 1px;
 }
 
+.present_pic {
+    padding-left: 30px;
+}
 
 
 
 /* Media Queries for Bio and Present sections */
-@media (max-width: 1180px) {
+@media (max-width: 1580px) {
     .navbar {
         width: 100%;
         height: auto;
@@ -223,9 +247,9 @@ a:hover {
         border-bottom: 2px solid #000;
     }
     .navbar__link {
-        font-size: 2.5em;
+        font-size: 1.4em;
         padding: 10px;
-        padding-left: 28px;
+        padding-left: 20px;
     }
     .bio, .present {
         flex-direction: column;
