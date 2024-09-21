@@ -60,7 +60,7 @@ a:hover {
     font-size: 1.2rem; /* Use relative units */
     color: #000;
     display: block;
-    padding: 15px;
+    padding: 22px;
     transition: color 0.3s ease;
 }
 
@@ -190,7 +190,7 @@ a:hover {
 
 
 /* Media Queries for Bio and Present sections */
-@media (max-width: 1380px) {
+@media (max-width: 1780px) {
     .navbar {
         width: 100%;
         height: auto;
