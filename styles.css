@@ -73,13 +73,32 @@ a:hover {
 
 #typing-text {
     overflow: hidden;
-    border-right: 4.5px solid #88c0d0;
+    border-right: 2.5px solid #000000;
     white-space: nowrap;
     margin: 0;
     padding: 0;
     display: inline-block;
     animation: typing 2s steps(30, end), blink-caret 1s step-end infinite, fadeIn 0.5s ease-in-out;
 }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 56%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #000000;
+    }
+}
+
 
 .intro {
     display: flex;
@@ -264,6 +283,15 @@ a:hover {
             padding: 10px;
             padding-left: 20px;
         }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 35%;
+            }
+        }
         .intro {
             display: flex;
             flex-direction: column;
@@ -398,6 +426,16 @@ a:hover {
         padding: 10px;
         padding-left: 20px;
     }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 75%;
+        }
+    }
+
     .intro {
         display: flex;
         flex-direction: column;
@@ -425,59 +463,6 @@ a:hover {
     
     
     
-
-    /* Immagine sopra il testo e centrata per la sezione Linux */
-    .linux__content {
-        display: flex;
-        flex-direction: column; /* Cambia l'ordine: immagine sopra il testo */
-        align-items: center;
-        text-align: center;
-    }
-
-    .linux__image {
-        max-width: 170%;  /* Riduci la larghezza dell'immagine al 80% */
-        margin-right: 10px;
-        margin-left: 145px;
-
-
-    }
-
-
-    /* Testo sotto l'immagine, centrato */
-    .linux__text {
-        text-align: center; /* Centra il testo */
-        order: 1; /* Assicura che il testo sia sotto l'immagine */
-        padding-bottom: 10px;
-        max-width: 100%;
-    
-        padding-left: px;
-        padding-right: 15px;
-        padding-top: 10px;
-    }
-
-    .linux__paragraph {
-        margin-bottom: -100px;
-        line-height: 1.4;
-        font-size: 1.4em;
-        text-align: center;
-        margin-left: -60px;
-        width: 150%;
-    
-    }
-
-    .linux__heading {
-        font-size: 2em;
-        text-align: center;
-        width: 180%;
- 
-
-    
-    }
-
-
-    .linux__line {
-        display: none; /* Rimuove le linee */
-    }
 
     .projects {
         padding: 10px 20px;
