@@ -6,7 +6,7 @@
         if (index < textToType.length) {
             typingText.innerHTML += textToType.charAt(index);
             index++;
-            setTimeout(typeText, 65); // Adjust the typing speed (milliseconds)
+            setTimeout(typeText, 80); // Adjust the typing speed (milliseconds)
         }
     }
 

@@ -289,7 +289,7 @@ a:hover {
                 width: 0;
             }
             to {
-                width: 35%;
+                width: 53%;
             }
         }
         .intro {
@@ -411,8 +411,10 @@ a:hover {
 
 }
 
+
+
 /* Media Queries */
-@media (max-width: 890px)  {
+@media (max-width: 450px)  {
     /* Togliere le linee e adattare per mobile */
     .navbar {
         width: 100%; /* Larghezza completa */
@@ -432,7 +434,7 @@ a:hover {
             width: 0;
         }
         to {
-            width: 75%;
+            width: 13%;
         }
     }
 
@@ -500,6 +502,17 @@ a:hover {
 
 }
 
+@media (max-width: 810px) {
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 53%;
+        }
+    }
+    
+}
 
 /* Aggiungi una classe per l'effetto di fade-in */
 .fade-in {

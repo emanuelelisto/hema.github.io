@@ -237,7 +237,7 @@ a:hover {
     }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 450px) {
     .navbar {
         width: 100%;
         height: auto;
