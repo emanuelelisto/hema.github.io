@@ -73,8 +73,6 @@ a:hover {
 .intro {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     padding: 140px 260px 40px 10px;
     background-color:  #fff;
     height: 370px;
@@ -244,14 +242,14 @@ a:hover {
 
 
 /* Media Queries */
-@media (max-width: 820px)  {
+@media (max-width: 890px)  {
     /* Togliere le linee e adattare per mobile */
     .navbar {
-        width: 100%;
-        height: auto;
-        position: relative;
+        width: 100%; /* Larghezza completa */
+        height: auto; /* Altezza dinamica */
+        position: relative; /* La navbar non è più fissata */
         border-right: none;
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid #000; /* Barra orizzontale */
     }
     .navbar__link {
         font-size: 1.4em;
@@ -390,3 +388,4 @@ a:hover {
         opacity: 1;
     }
 }
+
