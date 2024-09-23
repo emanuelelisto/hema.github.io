@@ -434,7 +434,7 @@ a:hover {
             width: 0;
         }
         to {
-            width: 13%;
+            width: 77%;
         }
     }
 
@@ -502,17 +502,7 @@ a:hover {
 
 }
 
-@media (max-width: 810px) {
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-        to {
-            width: 53%;
-        }
-    }
-    
-}
+
 
 /* Aggiungi una classe per l'effetto di fade-in */
 .fade-in {
