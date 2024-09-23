@@ -424,9 +424,9 @@ a:hover {
         border-bottom: 2px solid #000; /* Barra orizzontale */
     }
     .navbar__link {
-        font-size: 1.4em;
+        font-size: 1.3em;
         padding: 10px;
-        padding-left: 20px;
+        padding-left: 22px;
     }
 
     @keyframes typing {
