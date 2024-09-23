@@ -234,6 +234,7 @@ a:hover {
 
     .present_pic {
     max-width: 30%;
+    margin-right: 30px;
     }
 }
 
@@ -278,8 +279,8 @@ a:hover {
         font-size: 1.2em;
     }
     .present_pic {
-        max-width: 50%;
-        margin-right: 20px;
+        max-width: 70%;
+        margin-right: 30px;
         }
 }
 
