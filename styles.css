@@ -26,6 +26,7 @@ a {
 
 
 /* Navbar Styles */
+/* Navbar Styles */
 .navbar {
     width: 160px;
     height: 100vh;
@@ -33,42 +34,54 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed; /* Fissa la navbar in modo che rimanga visibile */
+    position: fixed; /* La navbar rimane visibile */
     top: 0;
     left: 0;
     border-right: 2px solid #000;
     padding-top: 20px;
     box-sizing: border-box;
-    z-index: 10; /* Assicurarsi che sia sopra il contenuto della pagina */
-    
+    z-index: 10;
 }
 
 .navbar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .navbar__logo img {
     width: 100px;
     height: auto;
-    transition: filter 0.3s ease; /* Smooth transition effect */
+    transition: filter 0.3s ease; /* Transizione al passaggio del mouse */
+    margin-left: 15px;
 }
 
 .navbar__logo:hover img {
-    filter: brightness(0.5); /* Makes the image darker when hovered */
+    filter: brightness(0.5); /* Scurisce il logo al passaggio del mouse */
 }
 
 .navbar__link {
-    font-size: 1.2em; /* Use relative units */
+    font-size: 1.2em;
     color: #000;
-    display: block;
+    display: flex; /* Usa flexbox per allineare icona e testo */
+    align-items: center; /* Allinea verticalmente l'icona con il testo */
     padding: 22px;
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
     transition: color 0.3s ease;
 }
 
 .navbar__link:hover {
     color: #666;
 }
+
+.navbar__icon {
+    width: 24px; /* Dimensione dell'icona */
+    height: auto;
+    margin-right: 10px; /* Spazio tra l'icona e il testo */
+    display: inline-block;
+    vertical-align: middle; /* Assicura che l'icona sia centrata */
+}
+
 
 
 
@@ -213,8 +226,8 @@ a {
 
 /* Singolo progetto */
 .projects__item {
-    width: calc(50% - 10px); /* Larghezza del 50% meno metà del gap */
-    padding: 20px;
+    width: calc(140% - 10px); /* Larghezza del 50% meno metà del gap */
+    padding: 50px;
     background-color: #fff;
     border: 2px solid #000;
     font-size: 1.2em;
@@ -292,8 +305,15 @@ a {
         .navbar__link {
             font-size: 1.3em;
             padding: 10px;
-            padding-left: 22px;
+            padding-left: 38px;
         }
+
+    
+        .navbar__icon {
+    display: none;
+        }
+        
+        
 
         @keyframes typing {
             from {
@@ -400,9 +420,15 @@ a {
     }
     .navbar__link {
         font-size: 1.3em;
-        padding: 10px;
-        padding-left: 22px;
+        padding: 14px;
+        padding-left: 37px;
     }
+
+    .navbar__icon {
+display: none;
+    }
+    
+    
 
     @keyframes typing {
         from {
