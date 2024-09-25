@@ -24,9 +24,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 /* Navbar Styles */
 .navbar {
@@ -259,6 +256,8 @@ a:hover {
 
     align-items: center; /* Allinea al centro verticalmente */
     padding-bottom: 80px;
+    outline: none; /* Disabilita l'outline */
+    border: none; /* Disabilita eventuali bordi */
 
 }
 
@@ -267,8 +266,13 @@ a:hover {
     height: 40px; /* Imposta l'altezza delle icone */
     object-fit: contain; /* Mantiene il contenuto delle icone proporzionato */
     margin-right: 20px; 
-    margin-bottom: -20px;
+
 }
+
+
+
+
+
 @media (max-width: 1780px) {
         /* Togliere le linee e adattare per mobile */
         .navbar {
