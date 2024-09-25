@@ -51,6 +51,11 @@ a {
 .navbar__logo img {
     width: 100px;
     height: auto;
+    transition: filter 0.3s ease; /* Smooth transition effect */
+}
+
+.navbar__logo:hover img {
+    filter: brightness(0.5); /* Makes the image darker when hovered */
 }
 
 .navbar__link {
@@ -64,6 +69,8 @@ a {
 .navbar__link:hover {
     color: #666;
 }
+
+
 
 
 /* Intro Section */
