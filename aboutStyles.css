@@ -24,9 +24,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 /* Navbar Styles */
 .navbar {
