@@ -46,27 +46,66 @@ a:hover {
     
 }
 
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+    width: 160px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; /* La navbar rimane visibile */
+    top: 0;
+    left: 0;
+    border-right: 2px solid #000;
+    padding-top: 20px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+
 .navbar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .navbar__logo img {
     width: 100px;
     height: auto;
+    transition: filter 0.3s ease; /* Transizione al passaggio del mouse */
+    margin-left: 15px;
+}
+
+.navbar__logo:hover img {
+    filter: brightness(0.5); /* Scurisce il logo al passaggio del mouse */
 }
 
 .navbar__link {
-    font-size: 1.2em; /* Use relative units */
+    font-size: 1.2em;
     color: #000;
-    display: block;
+    display: flex; /* Usa flexbox per allineare icona e testo */
+    align-items: center; /* Allinea verticalmente l'icona con il testo */
     padding: 22px;
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
     transition: color 0.3s ease;
 }
 
 .navbar__link:hover {
     color: #666;
 }
+
+.navbar__icon {
+    width: 24px; /* Dimensione dell'icona */
+    height: auto;
+    margin-right: 10px; /* Spazio tra l'icona e il testo */
+    display: inline-block;
+    vertical-align: middle; /* Assicura che l'icona sia centrata */
+}
+
+
+
 
 /* Bio Section */
 /* Bio and Present Section - Unified Styles */
@@ -191,18 +230,26 @@ a:hover {
 
 /* Media Queries for Bio and Present sections */
 @media (max-width: 1780px) {
-    .navbar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        border-right: none;
-        border-bottom: 2px solid #000;
-    }
-    .navbar__link {
-        font-size: 1.3em;
-        padding: 10px;
-        padding-left: 22px;
-    }
+        /* Togliere le linee e adattare per mobile */
+        .navbar {
+            width: 100%; /* Larghezza completa */
+            height: auto; /* Altezza dinamica */
+            position: relative; /* La navbar non è più fissata */
+            border-right: none;
+            border-bottom: 2px solid #000; /* Barra orizzontale */
+        }
+        .navbar__link {
+            font-size: 1.3em;
+            padding: 10px;
+            padding-left: 38px;
+        }
+
+    
+        .navbar__icon {
+    display: none;
+        }
+        
+        
     .bio, .present {
         flex-direction: column;
         align-items: center;
@@ -239,18 +286,24 @@ a:hover {
 }
 
 @media (max-width: 450px) {
+    /* Togliere le linee e adattare per mobile */
     .navbar {
-        width: 100%;
-        height: auto;
-        position: relative;
+        width: 100%; /* Larghezza completa */
+        height: auto; /* Altezza dinamica */
+        position: relative; /* La navbar non è più fissata */
         border-right: none;
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid #000; /* Barra orizzontale */
     }
     .navbar__link {
         font-size: 1.3em;
-        padding: 10px;
-        padding-left: 22px;
+        padding: 14px;
+        padding-left: 35px;
     }
+
+    .navbar__icon {
+display: none;
+    }
+    
     .bio, .present {
         flex-direction: column;
         align-items: center;
