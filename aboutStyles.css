@@ -25,7 +25,6 @@ a {
 }
 
 
-/* Navbar Styles */
 .navbar {
     width: 160px;
     height: 100vh;
@@ -33,26 +32,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed; /* Fissa la navbar in modo che rimanga visibile */
-    top: 0;
-    left: 0;
-    border-right: 2px solid #000;
-    padding-top: 20px;
-    box-sizing: border-box;
-    z-index: 10; /* Assicurarsi che sia sopra il contenuto della pagina */
-    
-}
-
-/* Navbar Styles */
-/* Navbar Styles */
-.navbar {
-    width: 160px;
-    height: 100vh;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed; /* La navbar rimane visibile */
+    position: fixed;
     top: 0;
     left: 0;
     border-right: 2px solid #000;
@@ -60,7 +40,6 @@ a {
     box-sizing: border-box;
     z-index: 10;
 }
-
 
 .navbar ul {
     list-style: none;
@@ -71,37 +50,52 @@ a {
 .navbar__logo img {
     width: 100px;
     height: auto;
-    transition: filter 0.3s ease; /* Transizione al passaggio del mouse */
+    transition: filter 0.3s ease;
     margin-left: 15px;
 }
 
-.navbar__logo:hover img {
-    filter: brightness(0.5); /* Scurisce il logo al passaggio del mouse */
+
+/* Stile per il contenitore del link (link + icona) */
+.navbar__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 16px;
 }
 
+/* Stile del link che avvolge icona + testo */
 .navbar__link {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #000;
-    display: flex; /* Usa flexbox per allineare icona e testo */
-    align-items: center; /* Allinea verticalmente l'icona con il testo */
-    padding: 22px;
-    text-decoration: none; /* Rimuove la sottolineatura dai link */
-    transition: color 0.3s ease;
+    text-decoration: none;
+    background-color: transparent;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: flex; /* Usa flexbox per allineare l'icona e il testo */
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 32px; /* Aggiunge spazio attorno al contenitore */
+    border-radius: 8px; /* Bordi arrotondati */
 }
 
+/* Effetto hover su tutto il link (testo + icona) */
 .navbar__link:hover {
-    color: #666;
+    background-color: #a0a0a0;
 }
 
+/* Stile per l'icona all'interno del link */
 .navbar__icon {
-    width: 24px; /* Dimensione dell'icona */
+    width: 20px;
     height: auto;
-    margin-right: 10px; /* Spazio tra l'icona e il testo */
-    display: inline-block;
-    vertical-align: middle; /* Assicura che l'icona sia centrata */
+    margin-right: 8px; /* Spazio tra l'icona e il testo */
 }
 
 
+.navbar__logo {
+    display: flex;
+    justify-content: center; /* Allinea il logo al centro */
+    width: 100%; /* Occupa tutto lo spazio disponibile */
+    padding-right: 10px;
+}
 
 
 /* Bio Section */
@@ -227,25 +221,37 @@ a {
 
 /* Media Queries for Bio and Present sections */
 @media (max-width: 1780px) {
-        /* Togliere le linee e adattare per mobile */
-        .navbar {
-            width: 100%; /* Larghezza completa */
-            height: auto; /* Altezza dinamica */
-            position: relative; /* La navbar non è più fissata */
-            border-right: none;
-            border-bottom: 2px solid #000; /* Barra orizzontale */
-        }
-        .navbar__link {
-            font-size: 1.3em;
-            padding: 10px;
-            padding-left: 35px;
-        }
+    /* Togliere le linee e adattare per mobile */
+    .navbar {
+        width: 100%; /* Larghezza completa */
+        height: auto; /* Altezza dinamica */
+        position: relative; /* La navbar non è più fissata */
+        border-right: none;
+        border-bottom: 2px solid #000; /* Barra orizzontale */
+    }
+    .navbar__link {
+        font-size: 1.3em;
+        padding: 14px;
+        padding-left: 20px;
+    }
 
-    
-        .navbar__icon {
-    display: none;
-        }
-        
+    .navbar__link {
+        font-size: 1em;
+        color: #000;
+        text-decoration: none;
+        background-color: transparent;
+        transition: color 0.3s ease, background-color 0.3s ease;
+        display: flex; /* Usa flexbox per allineare l'icona e il testo */
+        align-items: center;
+        justify-content: flex-start;
+        padding: 8px 32px; /* Aggiunge spazio attorno al contenitore */
+        border-radius: 8px; /* Bordi arrotondati */
+    }
+
+    .navbar__icon {
+display: none;
+    }
+
         
     .bio, .present {
         flex-direction: column;
@@ -283,8 +289,8 @@ a {
 }
 
 @media (max-width: 450px) {
-    /* Togliere le linee e adattare per mobile */
-    .navbar {
+     /* Togliere le linee e adattare per mobile */
+     .navbar {
         width: 100%; /* Larghezza completa */
         height: auto; /* Altezza dinamica */
         position: relative; /* La navbar non è più fissata */
@@ -294,12 +300,28 @@ a {
     .navbar__link {
         font-size: 1.3em;
         padding: 14px;
-        padding-left: 35px;
+        padding-left: 20px;
+    }
+
+    .navbar__link {
+        font-size: 1em;
+        color: #000;
+        text-decoration: none;
+        background-color: transparent;
+        transition: color 0.3s ease, background-color 0.3s ease;
+        display: flex; /* Usa flexbox per allineare l'icona e il testo */
+        align-items: center;
+        justify-content: flex-start;
+        padding: 8px 32px; /* Aggiunge spazio attorno al contenitore */
+        border-radius: 8px; /* Bordi arrotondati */
     }
 
     .navbar__icon {
 display: none;
     }
+    
+    
+
     
     .bio, .present {
         flex-direction: column;
