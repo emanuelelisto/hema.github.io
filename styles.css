@@ -86,7 +86,7 @@ a {
 .navbar__icon {
     width: 20px;
     height: auto;
-    margin-right: 8px; /* Spazio tra l'icona e il testo */
+    margin-right: 12px; /* Spazio tra l'icona e il testo */
 }
 
 
