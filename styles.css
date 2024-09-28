@@ -324,6 +324,20 @@ a {
 display: none;
     }
 
+    .navbar__link {
+        font-size: 1em;
+        color: #000;
+        text-decoration: none;
+        background-color: transparent;
+        transition: color 0.3s ease, background-color 0.3s ease;
+        display: flex; /* Usa flexbox per allineare l'icona e il testo */
+        align-items: center;
+        justify-content: flex-start;
+        padding: 8px 27px; /* Aggiunge spazio attorno al contenitore */
+        border-radius: 3px; /* Bordi arrotondati */
+    }
+    
+
 
     
 

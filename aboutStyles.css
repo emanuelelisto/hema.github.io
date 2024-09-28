@@ -240,7 +240,19 @@ a {
     .navbar__icon {
 display: none;
     }
-
+/* Stile del link che avvolge icona + testo */
+.navbar__link {
+    font-size: 1em;
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: flex; /* Usa flexbox per allineare l'icona e il testo */
+    align-items: cente5r;
+    justify-content: flex-start;
+    padding: 8px 24px; /* Aggiunge spazio attorno al contenitore */
+    border-radius: 3px; /* Bordi arrotondati */
+}
 
     .bio, .present {
         flex-direction: column;
