@@ -74,7 +74,7 @@ a {
     align-items: center;
     justify-content: flex-start;
     padding: 8px 32px; /* Aggiunge spazio attorno al contenitore */
-    border-radius: 8px; /* Bordi arrotondati */
+    border-radius: 3px; /* Bordi arrotondati */
 }
 
 /* Effetto hover su tutto il link (testo + icona) */
