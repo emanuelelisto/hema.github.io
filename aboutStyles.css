@@ -73,7 +73,7 @@ a {
     display: flex; /* Usa flexbox per allineare l'icona e il testo */
     align-items: center;
     justify-content: flex-start;
-    padding: 8px 32px; /* Aggiunge spazio attorno al contenitore */
+    padding: 8px 54px; /* Aggiunge spazio attorno al contenitore */
     border-radius: 3px; /* Bordi arrotondati */
 }
 
@@ -86,7 +86,8 @@ a {
 .navbar__icon {
     width: 20px;
     height: auto;
-    margin-right: 12px; /* Spazio tra l'icona e il testo */
+    margin-right: 14px; /* Spazio tra l'icona e il testo */
+    margin-left: -45px;
 }
 
 
@@ -94,7 +95,7 @@ a {
     display: flex;
     justify-content: center; /* Allinea il logo al centro */
     width: 100%; /* Occupa tutto lo spazio disponibile */
-    padding-right: 10px;
+    padding-right: 14px;
 }
 
 
@@ -230,29 +231,17 @@ a {
         border-bottom: 2px solid #000; /* Barra orizzontale */
     }
     .navbar__link {
-        font-size: 1.3em;
+        font-size: 1.2em;
         padding: 14px;
-        padding-left: 20px;
+        padding-left: 19px;
     }
 
-    .navbar__link {
-        font-size: 1em;
-        color: #000;
-        text-decoration: none;
-        background-color: transparent;
-        transition: color 0.3s ease, background-color 0.3s ease;
-        display: flex; /* Usa flexbox per allineare l'icona e il testo */
-        align-items: center;
-        justify-content: flex-start;
-        padding: 8px 32px; /* Aggiunge spazio attorno al contenitore */
-        border-radius: 8px; /* Bordi arrotondati */
-    }
 
     .navbar__icon {
 display: none;
     }
 
-        
+
     .bio, .present {
         flex-direction: column;
         align-items: center;
@@ -289,8 +278,8 @@ display: none;
 }
 
 @media (max-width: 450px) {
-     /* Togliere le linee e adattare per mobile */
-     .navbar {
+    /* Togliere le linee e adattare per mobile */
+    .navbar {
         width: 100%; /* Larghezza completa */
         height: auto; /* Altezza dinamica */
         position: relative; /* La navbar non è più fissata */
@@ -298,29 +287,16 @@ display: none;
         border-bottom: 2px solid #000; /* Barra orizzontale */
     }
     .navbar__link {
-        font-size: 1.3em;
+        font-size: 1.2em;
         padding: 14px;
-        padding-left: 20px;
+        padding-left: 19px;
     }
 
-    .navbar__link {
-        font-size: 1em;
-        color: #000;
-        text-decoration: none;
-        background-color: transparent;
-        transition: color 0.3s ease, background-color 0.3s ease;
-        display: flex; /* Usa flexbox per allineare l'icona e il testo */
-        align-items: center;
-        justify-content: flex-start;
-        padding: 8px 32px; /* Aggiunge spazio attorno al contenitore */
-        border-radius: 8px; /* Bordi arrotondati */
-    }
 
     .navbar__icon {
 display: none;
     }
-    
-    
+
 
     
     .bio, .present {
