@@ -73,7 +73,7 @@ a {
     display: flex; /* Usa flexbox per allineare l'icona e il testo */
     align-items: center;
     justify-content: flex-start;
-    padding: 8px 32px; /* Aggiunge spazio attorno al contenitore */
+    padding: 8px 54px; /* Aggiunge spazio attorno al contenitore */
     border-radius: 3px; /* Bordi arrotondati */
 }
 
@@ -87,6 +87,7 @@ a {
     width: 20px;
     height: auto;
     margin-right: 12px; /* Spazio tra l'icona e il testo */
+    margin-left: -40px;
 }
 
 
