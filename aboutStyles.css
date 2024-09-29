@@ -68,19 +68,19 @@ a {
     font-size: 1em;
     color: #000;
     text-decoration: none;
-    background-color: transparent;
-    transition: color 0.3s ease, background-color 0.3s ease;
     display: flex; /* Usa flexbox per allineare l'icona e il testo */
     align-items: center;
     justify-content: flex-start;
     padding: 8px 54px; /* Aggiunge spazio attorno al contenitore */
     border-radius: 3px; /* Bordi arrotondati */
+    background-color: #c9c9c97a
 }
 
 /* Effetto hover su tutto il link (testo + icona) */
 .navbar__link:hover {
-    background-color: #a0a0a07a
+    filter: brightness(90%);
 }
+
 
 /* Stile per l'icona all'interno del link */
 .navbar__icon {

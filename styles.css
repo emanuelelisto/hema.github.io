@@ -79,7 +79,7 @@ a {
 
 /* Effetto hover su tutto il link (testo + icona) */
 .navbar__link:hover {
-    background-color: #a0a0a07a;
+    background-color: #c9c9c97a
 }
 
 /* Stile per l'icona all'interno del link */
