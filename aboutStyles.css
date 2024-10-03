@@ -110,7 +110,6 @@ a {
 .present_pic {
     position: relative; /* Make the image's position relative to the line */
     margin-right: 200px; /* Space between the image and the line */
-
     margin-top: 100px
 }
 
@@ -126,6 +125,7 @@ a {
     display: block;
     max-width: 100%; /* Ensure the image scales correctly */
     height: auto; /* Maintain aspect ratio */
+    border-radius: 2px;
 }
 
 .bio_line {
@@ -152,7 +152,7 @@ a {
 }
 
 .bio_text, .present_text {
-    margin-left: 20px; /* No margin-left needed since the line will handle spacing */
+    margin-left: 6px; /* No margin-left needed since the line will handle spacing */
     padding-top: 400px;
     width: 100%; /* Text container takes full width of the container */
     max-width: 600px; /* Maximum width for the text */

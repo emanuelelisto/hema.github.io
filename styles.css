@@ -242,6 +242,7 @@ a {
     background-color: #fff;
     border: 2px solid #000;
     font-size: 1.2em;
+    border-radius: 3px;
 
     text-align: center; /* Centra il contenuto del progetto */
 }
