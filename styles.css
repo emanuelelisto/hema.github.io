@@ -453,9 +453,6 @@ display: none;
         padding-left: 22px;
     }
 
-    .navbar__link:hover {
-        display: none;
-    }
 
 
     .navbar__icon {
