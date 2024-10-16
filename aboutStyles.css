@@ -314,9 +314,13 @@ display: none;
     }
     .navbar__link {
         font-size: 1.2em;
-        padding: 14px;
-        padding-left: 19px;
+        padding: none;
+        padding-left: 20px;
+        border-radius: 3px; /* Bordi arrotondati */
+        background-color: #c9c9c97a
     }
+
+    
 
 
     .navbar__icon {

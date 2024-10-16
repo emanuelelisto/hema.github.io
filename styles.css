@@ -449,8 +449,8 @@ a {
     }
     .navbar__link {
         font-size: 1.2em;
-        padding: 14px;
-        padding-left: 22px;
+        padding: none;
+        padding-left: 25px;
     }
 
 
