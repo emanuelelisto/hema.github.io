@@ -453,10 +453,6 @@ a {
         padding-left: 25px;
     }
 
-    .navbar__link:hover {
-        display: none;
-    }
-
 
     .navbar__icon {
         display: none;
